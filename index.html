@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,143 @@
 </head>
 
 <body>
+
+  <header>
+    <div class="container">
+
+      <h1>uma seleção de produtos</h1>
+      <p><strong>especial para você</strong></p>
+      <p><small>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</small></p>
   
+      <nav>
+        <ul>
+  
+          <li><a href="#">Conheça a Linx</a></li>
+          <li><a href="#subscription-section">Ajude o algorítimo</a></li>
+          <li><a href="#products-section">Seus produtos</a></li>
+          <li><a href="#share-section">Compartilhe</a></li>
+  
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="subscription-section">
+    <div class="container">
+
+      <article>
+  
+        <h2>Ajude o algorítimo a ser mais certeiro</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
+        </p>
+        <p>
+          Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+        </p>
+  
+      </article>
+
+      <form name="client-subscription" id="client-subscription">
+  
+        <label>
+          Seu nome:
+          <input type="text" name="client-name" id="client-name">
+        </label>
+        <label>
+          E-mail:
+          <input type="email" name="client-e-mail" id="client-e-mail">
+        </label>
+        <label>
+          CPF:
+          <input type="number" name="client-cpf" id="client-cpf">
+        </label>
+  
+        <fieldset>
+          <legend>Gender</legend>
+
+          <label>
+            <input type="radio" name="client-gender" id="male" value="masculino">
+            Masculino
+          </label>
+          <label>
+            <input type="radio" name="client-gender" id="female" value="feminino">
+            Feminino
+          </label>
+  
+        </fieldset>
+  
+        <button type="submit">Enviar</button>
+
+      </form>
+
+    </div>
+  </main>
+
+  <section id="products-section">
+    <div class="container">
+
+      <h2>Sua seleção especial</h2>
+  
+      <div id="products">
+  
+        <article>
+  
+          <div><img src="" alt=""></div>
+  
+          <h3>Nome do produto</h3>
+          <p>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
+
+          <p><small>De: R$23,99</small></p>
+          <p><strong>Por: R$19,99</strong></p>
+          <p><small>ou 2x de R$9,99</small></p>
+  
+          <button type="submit">Comprar</button>
+
+        </article>
+  
+        <!-- + *7 products here -->
+  
+      </div>
+  
+      <button type="button">Ainda mais produtos aqui!</button>
+
+    </div>
+  </section>
+
+  <section id="share-section">
+    <div class="container">
+
+      <h2>Compartilhe a novidade</h2>
+      <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+  
+      <form name="friend-referral" id="friend-referral">
+
+        <label>
+          Nome do seu amigo:
+          <input type="text" name="friend-name" id="friend-name">
+        </label>
+        <label>
+          E-mail:
+          <input type="email" name="friend-email" id="friend-email">
+        </label>
+  
+        <button type="submit">Enviar agora</button>
+  
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <p><small>Testando suas habilidades em HTML, CSS e JS.</small></p>
+      <p><small>Linx Impulse</small></p>
+      <p><small>2019</small></p>
+
+    </div>
+  </footer>
+
 </body>
 </html>
