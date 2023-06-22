@@ -1,0 +1,60 @@
+:root {
+
+  /* COLORS */
+
+  --dark-grey: #707070;
+  --grey: #888888;
+  --shadow: #00000029;
+  --white: #ffffff;
+
+
+  /* TYPOGRAPHY */
+
+  /* font-family */
+  --ff-primary: 'Helvetica', sans-serif;
+
+  /* font-size */
+  --fs-100: 0.75rem;    /* 12px */
+  --fs-200: 0.875rem;   /* 14px */
+  --fs-300: 1rem;       /* 16px */
+  --fs-400: 1.125rem;   /* 18px */
+  --fs-500: 1.25rem;    /* 20px */
+  --fs-1000: 2.5rem;    /* 40px */
+
+  /* font-weight */
+  --fw-100: 'normal';
+  --fw-200: 'bold';
+
+
+  /* BOX-MODEL */
+
+  /* sizing: width, height */
+
+  /* max-width main container */
+  --wm: 57.5rem;      /* 920px */
+
+  /* max-width body */
+  --wb: 93.75rem;     /* 1500px */
+
+  /* spacing: gap, margin, padding */
+
+  /* gap */
+  --g1: 1.25rem;      /* 20px */
+  --g2: 1.875rem;     /* 30px */
+  --g3: 2.5rem;       /* 40px */
+  --g4: 3.125rem;     /* 50px */
+  --g4: 3.75rem;      /* 60px */
+
+  /* padding buttons */
+  --pb-1: 0.375rem;   /* 6px */
+  --pb-2: 0.75rem;    /* 12px */
+
+  /* border buttons*/
+  --bb-1: 0.0625rem;  /* 1px */
+
+  /* border-radius */
+  --br-1: 0.25rem;    /* 4px */
+
+  /* box-shadow */
+  --bs-1: 0 0.0625rem 0.375rem var(--shadow);
+}
