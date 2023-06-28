@@ -1,0 +1,97 @@
+.title-1 {
+
+  font-size: var(--fs-20);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-1);
+  color: var(--white);
+}
+
+.title-2 {
+
+  font-size: var(--fs-20);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-1);
+  color: var(--grey);
+}
+
+.title-3 {
+
+  font-size: var(--fs-18);
+  font-weight: var(--fw-b);
+  line-height: var(--lh-0);
+  color: var(--grey);
+}
+
+.strong-1 {
+
+  font-size: var(--fs-40);
+  font-weight: var(--fw-b);
+  line-height: var(--lh-1);
+  color: var(--white);
+}
+
+.strong-2 {
+
+  font-size: var(--fs-16);
+  font-weight: var(--fw-b);
+  line-height: var(--lh-0);
+  color: var(--grey);
+}
+
+.smaller-1 {
+
+  font-size: var(--fs-14);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-1);
+  color: var(--white);
+}
+
+.smaller-2,
+.product-description {
+
+  font-size: var(--fs-12);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-2);
+  color: var(--grey);
+}
+
+.item-link,
+.product-name {
+
+  font-size: var(--fs-14);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-1);
+  color: var(--grey);
+}
+
+.marketing-text {
+
+  font-size: var(--fs-12);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-2);
+  color: var(--grey);
+}
+
+.label {
+
+  font-size: var(--fs-12);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-1);
+  color: var(--grey);
+}
+
+.input {
+
+  font-size: var(--fs-16);
+  font-weight: var(--fw-n);
+  line-height: 1em;
+  color: var(--grey);
+}
+
+.button {
+
+  font-size: var(--fs-16);
+  font-weight: var(--fw-n);
+  line-height: 1em;
+  color: var(--grey);
+}

@@ -14,16 +14,23 @@
   --ff-primary: 'Helvetica', sans-serif;
 
   /* font-size */
-  --fs-100: 0.75rem;    /* 12px */
-  --fs-200: 0.875rem;   /* 14px */
-  --fs-300: 1rem;       /* 16px */
-  --fs-400: 1.125rem;   /* 18px */
-  --fs-500: 1.25rem;    /* 20px */
-  --fs-1000: 2.5rem;    /* 40px */
+  --fs-0: 1rem;                         /* 16px */
+  --fs-12: calc(var(--fs-0)*0.75);      /* 12px */
+  --fs-14: calc(var(--fs-0)*0.875);     /* 14px */
+  --fs-16: calc(var(--fs-0)*1);         /* 16px */
+  --fs-18: calc(var(--fs-0)*1.125);     /* 18px */
+  --fs-20: calc(var(--fs-0)*1.25);      /* 20px */
+  --fs-40: calc(var(--fs-0)*2.5);       /* 40px */
 
   /* font-weight */
-  --fw-100: 'normal';
-  --fw-200: 'bold';
+  --fw-n: 'normal';
+  --fw-b: 700;
+
+  /* line-height */
+
+  --lh-0: 1em;
+  --lh-1: 1.2em;
+  --lh-2: 1.5em;
 
 
   /* BOX-MODEL */
@@ -31,29 +38,47 @@
   /* sizing: width, height */
 
   /* max-width main container */
-  --wm: 57.5rem;      /* 920px */
+  --w-main: 57.5rem;                  /* 920px */
 
   /* max-width body */
-  --wb: 93.75rem;     /* 1500px */
+  --w-body: 93.75rem;                 /* 1500px */
 
-  /* spacing: gap, margin, padding */
+  --w-subscription-copy: 32.5rem;     /* 520px */
+  --w-client-subscription: 21.25rem;  /* 340px */
 
-  /* gap */
-  --g1: 1.25rem;      /* 20px */
-  --g2: 1.875rem;     /* 30px */
-  --g3: 2.5rem;       /* 40px */
-  --g4: 3.125rem;     /* 50px */
-  --g4: 3.75rem;      /* 60px */
+  --w-product-card: 12.5rem;          /* 200px */
+  --h-product-image: 9.375rem;        /* 150px */
 
-  /* padding buttons */
-  --pb-1: 0.375rem;   /* 6px */
-  --pb-2: 0.75rem;    /* 12px */
 
-  /* border buttons*/
-  --bb-1: 0.0625rem;  /* 1px */
+  /* width buttons */
+  --w-button-1: 10rem;                /* 160px */
 
-  /* border-radius */
-  --br-1: 0.25rem;    /* 4px */
+  /* height header */
+  --h-header: 25rem;                  /* 400px */
+
+  /* skew */
+  --skew-header: 5deg;
+
+  /* spacing: gap, margin*/
+
+  --spacer-0: 1rem;                         /* 16px */
+  --spacer-1: calc(var(--spacer-0)*1.25);   /* 20px */
+  --spacer-2: calc(var(--spacer-0)*1.5);    /* 24px */
+  --spacer-3: calc(var(--spacer-0)*1.875);  /* 30px */
+  --spacer-4: calc(var(--spacer-0)*2.5);    /* 40px */
+  --spacer-5: calc(var(--spacer-0)*3.125);  /* 50px */
+  --spacer-6: calc(var(--spacer-0)*3.75);   /* 60px */
+  --spacer-7: calc(var(--spacer-0)*4.375);  /* 70px */
+  --spacer-8: calc(var(--spacer-0)*5);      /* 80px */
+  --spacer-10: calc(var(--spacer-0)*8);     /* 128px */
+
+  --border-1: 0.0625rem solid var(--dark-grey);     /* 1px */
+  --radius-1: 0.25rem;       /* 4px */
+
+  /* padding */
+  --padding-0: 1rem;                            /* 16px */
+  --padding-1: calc(var(--padding-0)*0.375);    /* 6px */
+  --padding-2: calc(var(--padding-0)*0.75);     /* 12px */
 
   /* box-shadow */
   --bs-1: 0 0.0625rem 0.375rem var(--shadow);
