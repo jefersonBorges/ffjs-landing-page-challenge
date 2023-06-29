@@ -4,7 +4,7 @@
 
   --dark-grey: #707070;
   --grey: #888888;
-  --shadow: #00000029;
+  --shadow-color: #00000029;
   --white: #ffffff;
 
 
@@ -39,49 +39,39 @@
 
   /* sizing: width, height */
 
-  /* max-width main container */
-  --w-desktop: 57.5rem;                  /* 920px */
-
-  /* max-width page */
   --w-page: 93.75rem;                 /* 1500px */
-
+  --w-desktop: 57.5rem;               /* 920px */
   --w-subscription-copy: 32.5rem;     /* 520px */
   --w-input: 21.25rem;                /* 340px */
-
+  --w-button: 16.25rem;               /* 260px */
   --w-product-card: 12.5rem;          /* 200px */
-  --h-product-image: 9.375rem;        /* 150px */
-
-
-  /* width buttons */
-  --w-button-1: 10rem;                /* 160px */
-
-  /* height header */
+  --w-nav-item: 10rem;                /* 160px */
+  
   --h-header: 25rem;                  /* 400px */
+  --h-footer: 18.75rem;               /* 300px */
+  --h-product-image: 9.375rem;        /* 150px */
 
   /* skew */
   --skew-header: 5deg;
+  --skew-footer: -5deg;
 
-  /* spacing: gap, margin*/
+  /* spacing: gap, margin, padding*/
 
-  --spacer-0: 1rem;                         /* 16px */
-  --spacer-1: calc(var(--spacer-0)*1.25);   /* 20px */
-  --spacer-2: calc(var(--spacer-0)*1.5);    /* 24px */
-  --spacer-3: calc(var(--spacer-0)*1.875);  /* 30px */
-  --spacer-4: calc(var(--spacer-0)*2.5);    /* 40px */
-  --spacer-5: calc(var(--spacer-0)*3.125);  /* 50px */
-  --spacer-6: calc(var(--spacer-0)*3.75);   /* 60px */
-  --spacer-7: calc(var(--spacer-0)*4.375);  /* 70px */
-  --spacer-8: calc(var(--spacer-0)*5);      /* 80px */
-  --spacer-10: calc(var(--spacer-0)*8);     /* 128px */
+  --s-0: 1rem;                     /* 16px */
+  --s-6: calc(var(--s-0)*.375);    /* 6px */
+  --s-10: calc(var(--s-0)*.625);   /* 10px */
+  --s-12: calc(var(--s-0)*.75);    /* 12px */
+  --s-14: calc(var(--s-0)*.875);   /* 14px */
+  --s-20: calc(var(--s-0)*1.25);   /* 20px */
+  --s-24: calc(var(--s-0)*1.5);    /* 24px */
+  --s-30: calc(var(--s-0)*1.875);  /* 30px */
+  --s-40: calc(var(--s-0)*2.5);    /* 40px */
+  --s-50: calc(var(--s-0)*3.125);  /* 50px */
+  --s-60: calc(var(--s-0)*3.75);   /* 60px */
+  --s-70: calc(var(--s-0)*4.375);  /* 70px */
+  --s-80: calc(var(--s-0)*5);      /* 80px */
 
-  --border-1: 0.0625rem solid var(--dark-grey);     /* 1px */
-  --radius-1: 0.25rem;       /* 4px */
-
-  /* padding */
-  --padding-0: 1rem;                            /* 16px */
-  --padding-1: calc(var(--padding-0)*0.375);    /* 6px */
-  --padding-2: calc(var(--padding-0)*0.75);     /* 12px */
-
-  /* box-shadow */
-  --bs-1: 0 0.0625rem 0.375rem var(--shadow);
+  --radius: 0.25rem;       /* 4px */
+  --border: 0.0625rem solid var(--dark-grey);     /* 1px */
+  --shadow: 0 0.0625rem 0.375rem var(--shadow-color);
 }

@@ -120,7 +120,8 @@ body {
   color: var(--grey);
 }
 
-.input {
+.input,
+.radio {
 
   font-size: var(--fs-16);
   font-weight: var(--fw-n);
