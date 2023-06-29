@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,16 +9,19 @@
   <script src="./assets/script/main.js"></script>
 
   <title>Landing Page Challenge | FFJS</title>
+  
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="grid-container">
 
       <h1 class="title-1">uma seleção de produtos</h1>
       <p><strong class="strong-1">especial para você</strong></p>
-      <p class="callout-copy"><small class="smaller-1">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</small></p>
+      <p class="header-text">
+        Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+      </p>
   
       <nav>
         <ul class="nav">
@@ -29,25 +33,25 @@
   
         </ul>
       </nav>
-
+  
     </div>
   </header>
 
   <main id="subscription-section" class="subscription-section">
-    <div class="container">
+    <div class="grid-container">
 
       <article class="subscription-copy">
   
         <h2 class="title-2">Ajude o algorítimo a ser mais certeiro</h2>
-        <p class="marketing-text">
+        <p class="subscription-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
         </p>
-        <p class="marketing-text">
+        <p class="subscription-text">
           Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
         </p>
   
       </article>
-
+  
       <form class="client-subscription" name="client-subscription" id="client-subscription">
   
         <label class="label">
@@ -64,7 +68,7 @@
         </label>
   
         <fieldset class="fieldset">
-
+  
           <label class="label">
             <input type="radio" name="client-gender" id="male" value="masculino">
             Masculino
@@ -77,13 +81,14 @@
         </fieldset>
   
         <button class="button" type="submit">Enviar</button>
-
+  
       </form>
     </div>
+
   </main>
 
   <section class="products-section" id="products-section">
-    <div class="container">
+    <div class="grid-container">
 
       <div class="cross-lined">
         <h3 class="title-3">Sua seleção especial</h3>
@@ -95,21 +100,20 @@
   
           <img class="product-image" src="" alt="product-image">
   
-          <h4 class="product-name">Nome do produto</h4>
-          <p class="product-description">
+          <h4 class="product-name title-4 ">Nome do produto</h4>
+          <p class="product-description product-text">
             Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
           </p>
-
-          <p class="old-price"><small class="smaller-2">De: R$23,99</small></p>
-          <p class="current-price"><strong class="strong-2">Por: R$19,99</strong></p>
-          <p class="installments"><small class="smaller-2">ou 2x de R$9,99</small></p>
+  
+          <p class="old-price smaller-2">De: R$23,99</p>
+          <strong class="current-price strong-2">Por: R$19,99</strong>
+          <p class="installments smaller-2">ou 2x de R$9,99</p>
   
           <button class="button" type="submit">Comprar</button>
-
-        </article>
-
-        <!-- + *7 products here -->
   
+        </article>
+  
+        <!-- + *7 products here -->
       </div>
   
       <button class="button" type="button">Ainda mais produtos aqui!</button>
@@ -118,37 +122,39 @@
   </section>
 
   <section class="share-section" id="share-section">
-    <div class="container">
+    <div class="grid-container">
 
       <div class="cross-lined">
         <h3 class="title-3">Compartilhe a novidade</h3>
       </div>
-      <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+      <p class="sharing-text">
+        Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+      </p>
   
-      <form name="friend-referral" id="friend-referral">
-
-        <label>
+      <form class="friend-subscription" name="friend-subscription" id="friend-subscription">
+  
+        <label class="label">
           Nome do seu amigo:
-          <input type="text" name="friend-name" id="friend-name">
+          <input class="input" type="text" name="friend-name" id="friend-name">
         </label>
-        <label>
+        <label class="label">
           E-mail:
-          <input type="email" name="friend-email" id="friend-email">
+          <input class="input" type="email" name="friend-email" id="friend-email">
         </label>
   
-        <button type="submit">Enviar agora</button>
+        <button class="button" type="submit">Enviar agora</button>
   
       </form>
 
     </div>
   </section>
 
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="grid-section">
 
-      <p><small>Testando suas habilidades em HTML, CSS e JS.</small></p>
-      <p><small>Linx Impulse</small></p>
-      <p><small>2019</small></p>
+      <p class="smaller-3">Testando suas habilidades em HTML, CSS e JS.</p>
+      <p class="smaller-3">Linx Impulse</p>
+      <p class="smaller-3">2019</p>
 
     </div>
   </footer>

@@ -1,8 +1,13 @@
+body {
+  
+  font-family: var(--ff-primary);
+}
+
 .title-1 {
 
   font-size: var(--fs-20);
   font-weight: var(--fw-n);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--white);
 }
 
@@ -10,7 +15,7 @@
 
   font-size: var(--fs-20);
   font-weight: var(--fw-n);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--grey);
 }
 
@@ -22,11 +27,18 @@
   color: var(--grey);
 }
 
+.title-4 {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-m);
+  line-height: var(--lh-2);
+  color: var(--grey);
+}
+
 .strong-1 {
 
   font-size: var(--fs-40);
   font-weight: var(--fw-b);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--white);
 }
 
@@ -42,12 +54,11 @@
 
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--white);
 }
 
-.smaller-2,
-.product-description {
+.smaller-2 {
 
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
@@ -55,20 +66,49 @@
   color: var(--grey);
 }
 
-.item-link,
-.product-name {
+.smaller-3 {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-2);
+  color: var(--white);
+}
+
+.item-link {
 
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--grey);
 }
 
-.marketing-text {
+.header-text {
+
+  font-size: var(--fs-14);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-2);
+  color: var(--white);
+}
+
+.subscription-text {
 
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
+  color: var(--grey);
+}
+
+.sharing-text {
+
+  font-size: var(--fs-14);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-2);
+  color: var(--grey);
+}
+
+.product-text {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-3);
   color: var(--grey);
 }
 
@@ -76,7 +116,7 @@
 
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   color: var(--grey);
 }
 

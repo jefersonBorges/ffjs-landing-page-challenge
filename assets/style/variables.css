@@ -24,13 +24,15 @@
 
   /* font-weight */
   --fw-n: 'normal';
-  --fw-b: 700;
+  --fw-m: 600;
+  --fw-b: 800;
 
   /* line-height */
 
-  --lh-0: 1em;
-  --lh-1: 1.2em;
-  --lh-2: 1.5em;
+  --lh-1: 1em;
+  --lh-2: 1.2em;
+  --lh-3: 1.3em;
+  --lh-5: 1.5em;
 
 
   /* BOX-MODEL */
@@ -38,13 +40,13 @@
   /* sizing: width, height */
 
   /* max-width main container */
-  --w-main: 57.5rem;                  /* 920px */
+  --w-desktop: 57.5rem;                  /* 920px */
 
-  /* max-width body */
-  --w-body: 93.75rem;                 /* 1500px */
+  /* max-width page */
+  --w-page: 93.75rem;                 /* 1500px */
 
   --w-subscription-copy: 32.5rem;     /* 520px */
-  --w-client-subscription: 21.25rem;  /* 340px */
+  --w-input: 21.25rem;                /* 340px */
 
   --w-product-card: 12.5rem;          /* 200px */
   --h-product-image: 9.375rem;        /* 150px */
