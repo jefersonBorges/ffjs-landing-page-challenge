@@ -78,6 +78,7 @@ To run this project, simply download the files and open the "index.html" file wi
 
 - HTML semantic Markup
 - CSS
+  - Mobile-first
   - Flexbox
   - Grid
 - Javascript
@@ -88,6 +89,8 @@ To run this project, simply download the files and open the "index.html" file wi
   - DOM
 
 ### What I learned
+
+- CSS Grid auto-fit and image aspect-ratio [Learn how to create a responsive CSS grid layout](https://www.youtube.com/watch?v=sKFW3wek21Q)
 
 ### Continued development
 

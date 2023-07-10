@@ -1,5 +1,4 @@
 body {
-  
   font-family: var(--ff-primary);
 }
 
@@ -28,6 +27,7 @@ body {
 }
 
 .title-4 {
+
   font-size: var(--fs-14);
   font-weight: var(--fw-m);
   line-height: var(--lh-2);
@@ -67,6 +67,7 @@ body {
 }
 
 .smaller-3 {
+
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -93,11 +94,11 @@ body {
 
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
-  line-height: var(--lh-2);
+  line-height: var(--lh-5);
   color: var(--grey);
 }
 
-.sharing-text {
+.share-text {
 
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
@@ -106,6 +107,7 @@ body {
 }
 
 .product-text {
+
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-3);
@@ -123,9 +125,9 @@ body {
 .input,
 .radio {
 
-  font-size: var(--fs-16);
+  font-size: var(--fs-18);
   font-weight: var(--fw-n);
-  line-height: 1em;
+  line-height: var(--lh-1);
   color: var(--grey);
 }
 
@@ -133,6 +135,6 @@ body {
 
   font-size: var(--fs-16);
   font-weight: var(--fw-n);
-  line-height: 1em;
+  line-height: var(--lh-1);
   color: var(--grey);
 }

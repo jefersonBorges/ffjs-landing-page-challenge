@@ -25,13 +25,14 @@
   /* font-weight */
   --fw-n: 'normal';
   --fw-m: 600;
-  --fw-b: 800;
+  --fw-b: 700;
 
   /* line-height */
 
   --lh-1: 1em;
   --lh-2: 1.2em;
   --lh-3: 1.3em;
+  --lh-4: 1.4em;
   --lh-5: 1.5em;
 
 
@@ -39,21 +40,33 @@
 
   /* sizing: width, height */
 
-  --w-page: 93.75rem;                 /* 1500px */
-  --w-desktop: 57.5rem;               /* 920px */
-  --w-subscription-copy: 32.5rem;     /* 520px */
-  --w-input: 21.25rem;                /* 340px */
-  --w-button: 16.25rem;               /* 260px */
-  --w-product-card: 12.5rem;          /* 200px */
-  --w-nav-item: 10rem;                /* 160px */
+  --w-page-max: 93.75rem;               /* 1500px */
+  --w-page-min: 26.25rem;               /* 420px */
+  --w-container-max: 57.5rem;           /* 920px */
+
+  --w-subscription-copy: 32.5rem;       /* 520px */
+  --w-client-subscription: 21.25rem;    /* 340px */
+  --w-subscription-mobile: 24rem; /* 384px */       
+
+  --w-button: 16.25rem;                 /* 260px */
+  --w-button-card: 12.5rem;             /* 200px */
+
+  --w-product-image: 10.5rem;           /* 168px */
+  --h-product-image: 8rem;              /* 128px */
+
+  --w-product-image-desktop: 12.5rem;   /* 200px */
+  --h-product-image-desktop: 9.375rem;  /* 128px */
+
+  --w-nav-item: 10rem;                  /* 160px */
   
-  --h-header: 25rem;                  /* 400px */
-  --h-footer: 18.75rem;               /* 300px */
-  --h-product-image: 9.375rem;        /* 150px */
+  --h-header: 25rem;                    /* 400px */
+  --h-footer: 18.75rem;                 /* 300px */
 
   /* skew */
-  --skew-header: 5deg;
-  --skew-footer: -5deg;
+
+  --skew-header-angle-mobile: 15deg;
+  --skew-header-angle-desktop: 5deg;
+  --skew-footer-angle: -5deg;
 
   /* spacing: gap, margin, padding*/
 
@@ -62,6 +75,7 @@
   --s-10: calc(var(--s-0)*.625);   /* 10px */
   --s-12: calc(var(--s-0)*.75);    /* 12px */
   --s-14: calc(var(--s-0)*.875);   /* 14px */
+  --s-16: calc(var(--s-0)*1);      /* 16px */
   --s-20: calc(var(--s-0)*1.25);   /* 20px */
   --s-24: calc(var(--s-0)*1.5);    /* 24px */
   --s-30: calc(var(--s-0)*1.875);  /* 30px */
