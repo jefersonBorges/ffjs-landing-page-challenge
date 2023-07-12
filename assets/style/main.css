@@ -53,7 +53,7 @@ body {
 .footer,
 .subscription-section,
 .products-section,
-.share-section {
+.referral-section {
 
   display: grid;
   grid-template-columns: 100%;
@@ -148,6 +148,10 @@ body {
   width: 100%;
 }
 
+.subscription-copy.desktop {
+  display: none;
+}
+
 summary.title-2 {
 
   position: relative;
@@ -181,6 +185,7 @@ details[open].subscription-copy > summary.title-2::before {
 details[open].subscription-copy > .subscription-text{
   padding-top: var(--s-16);
 }
+
 
 .client-subscription {
 
@@ -244,7 +249,15 @@ details[open].subscription-copy > .subscription-text{
     var(--w-client-subscription);
   }
 
-  summary.title-2 {
+  .subscription-copy.desktop {
+    display: grid;
+  }
+
+  .subscription-copy.mobile {
+    display: none;
+  }
+
+  .subscription-section .title-2 {
     padding-bottom: var(--s-14);
   }
 }
@@ -350,7 +363,7 @@ details[open].subscription-copy > .subscription-text{
   gap: var(--s-6);
 }
 
-.product-info .button {
+.product-card .button {
   
   width: var(--w-button-card);
   padding: var(--s-6);
@@ -383,7 +396,7 @@ details[open].subscription-copy > .subscription-text{
   }
 }
 
-.share-section .container {
+.referral-section .container {
 
   display: grid;
   grid-template-columns: 100%;
@@ -394,15 +407,15 @@ details[open].subscription-copy > .subscription-text{
   gap: var(--s-30);
 }
 
-.share-section .share-text {
+.referral-section .share-text {
   text-align: center;
 }
 
-.share-section .button {
+.referral-section .button {
   margin-top: var(--s-12);
 }
 
-.friend-subscription {
+.friend-referral {
 
   display: grid;
   grid-template-columns: var(--w-subscription-mobile);
@@ -413,11 +426,11 @@ details[open].subscription-copy > .subscription-text{
 
 @media screen and (min-width: 52rem) {/* 832px */
 
-  .share-section .container {
+  .referral-section .container {
     gap: var(--s-40);
   }
 
-  .friend-subscription  {
+  .friend-referral  {
 
     grid-template-columns: 
     repeat(2, var(--w-subscription-mobile));
