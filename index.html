@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./assets/style/main.css">
-  <script src="./assets/script/main.js"></script>
+
+  <script src="./assets/script/model/subscription-model.js" defer></script>
+  <script src="./assets/script/main.js" defer></script>
 
   <title>Landing Page Challenge | FFJS</title>
 
@@ -70,30 +72,70 @@
   
       <form class="client-subscription" name="client-subscription" id="client-subscription">
   
-        <label class="label">
-          Seu nome:
-          <input class="input" type="text" name="client-name" id="client-name">
-        </label>
-        <label class="label">
-          E-mail:
-          <input class="input" type="email" name="client-email" id="client-email">
-        </label class="label">
-        <label class="label">
-          CPF:
-          <input class="input" type="number" name="client-cpf" id="client-cpf">
-        </label>
+        <div class="form-row">
+          <label class="label" for="client-name">Seu nome:</label>
+          <input 
+            class="input" 
+            type="text" 
+            name="client-name" 
+            id="client-name">
+          <span class="message" role="alert" id="client-name-error">Insira o seu nome</span>
+        </div>
+
+        <div class="form-row">
+          <label class="label" for="client-email">E-mail:</label>
+          <input 
+            class="input" 
+            type="email" 
+            name="client-email" 
+            id="client-email">
+          <span class="message" role="alert" id="client-email-error">Insira o seu e-mail</span>
+        </div>
+
+        <div class="form-row">
+          <label class="label" for="client-cpf">CPF:</label>
+          <input 
+            class="input"
+            type="text" 
+            inputmode="numeric" 
+            name="client-cpf" 
+            id="client-cpf">
+          <span class="message" role="alert" id="client-cpf-error">Insira o seu cpf com 8 números somente</span>
+        </div>
   
-        <fieldset class="fieldset">
-  
-          <label class="label">
-            <input class="radio" type="radio" name="client-gender" id="male" value="male">
-            Masculino
-          </label>
-          <label class="label">
-            <input class="radio" type="radio" name="client-gender" id="female" value="female">
-            Feminino
-          </label>
-  
+        <fieldset class="fieldset-radio" id="client-gender">
+
+          <div class="radio-column">
+            <input 
+              class="radio" 
+              type="radio" 
+              name="client-gender" 
+              id="client-gender-male" 
+              value="male">
+            <label class="label" for="client-gender-male">Masculino</label>
+          </div>
+
+          <div class="radio-column">
+            <input 
+              class="radio" 
+              type="radio" 
+              name="client-gender" 
+              id="client-gender-female" 
+              value="female">
+            <label class="label" for="client-gender-female">Feminino</label>
+          </div>
+
+          <div class="radio-column">
+            <input 
+              class="radio" 
+              type="radio" 
+              name="client-gender" 
+              id="client-gender-other" 
+              value="other">
+            <label class="label" for="client-gender-other">Outro</label>
+          </div>
+
+          <span class="message" role="alert" id="client-gender-error">Selecione uma opção</span>
         </fieldset>
   
         <button class="button" type="submit">Enviar</button>
@@ -110,8 +152,8 @@
         <h3 class="title-3">Sua seleção especial</h3>
       </div>
   
-      <section class="products" id="products">
-        <!--
+      <section class="product-selection" id="product-selection">
+        
         <article class="product-card">
           <img class="product-image" src="" alt="product-image">
   
@@ -280,7 +322,7 @@
           </div>
           
         </article>
-         -->
+        
       </div>
   
       <button class="button" name="more-products" id="more-products" value="1" type="button">Ainda mais produtos aqui!</button>
@@ -300,14 +342,24 @@
   
       <form class="friend-referral" name="friend-referral" id="friend-referral">
 
-        <label class="label">
-          Nome do seu amigo:
-          <input class="input" type="text" name="friend-name" id="friend-name">
-        </label>
-        <label class="label">
-          E-mail:
-          <input class="input" type="email" name="friend-email" id="friend-email">
-        </label>
+        <div class="form-row">
+          <label class="label">Nome do seu amigo:</label>
+          <input
+            class="input"
+            type="text"
+            name="friend-name"
+            id="friend-name">
+          <span class="message" role="alert" id="friend-name-error"></span>
+        </div>
+
+        <div class="form-row">
+          <label class="label">E-mail:</label>
+          <input class="input"
+          type="email"
+          name="friend-email"
+          id="friend-email">
+          <span class="message" role="alert" id="friend-email-error"></span>
+        </div>
 
       </form>
       

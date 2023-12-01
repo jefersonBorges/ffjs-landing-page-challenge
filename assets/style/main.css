@@ -194,7 +194,9 @@ details[open].subscription-copy > .subscription-text{
   gap: var(--s-20);
 }
 
-.label {
+.form-row {
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -204,25 +206,50 @@ details[open].subscription-copy > .subscription-text{
   gap: var(--s-6);
 }
 
-.input {
-
-  width: 100%;
-  padding: var(--s-6);
+.message {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.message.danger {
+  display: block;
 }
 
-.client-subscription .fieldset {
+.input {
+  width: 100%;
+  padding: var(--s-6);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.input.danger,
+.radio.danger {
+  border: var(--border-danger);
+  box-shadow: var(--shadow-danger);
+}
+
+.client-subscription .fieldset-radio {
+
+  position: relative;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   gap: var(--s-40);
-
+  border-radius: var(--radius);
   border: none;
 }
 
-.client-subscription .fieldset .label {
+.fieldset-radio .radio-column {
+
+  display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: var(--s-6);
 }
 
 .button {
@@ -314,7 +341,7 @@ details[open].subscription-copy > .subscription-text{
   width: var(--w-button);
 } 
 
-.products-section .products {
+.products-section .product-selection {
 
   display: flex;
   flex-direction: column;
@@ -375,13 +402,13 @@ details[open].subscription-copy > .subscription-text{
     padding: var(--s-60) 0;
   }
 
-  .products-section .products {
+  .products-section .product-selection {
 
     flex-direction: row;
     gap: var(--s-40);
   }
 
-  .products .product-card {
+  .product-selection .product-card {
     grid-template-columns: var(--w-product-image-desktop)
   }
 

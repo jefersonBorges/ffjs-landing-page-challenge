@@ -1,134 +1,102 @@
-
-const Landing_page = {
-  init() {
-    this.bindEvents()
-    
-  },
-
-  cacheSelectors() {
-
-    this.$clientSubscriptionForm = document.querySelector('#client-subscription')
-    this.$productsSection = document.querySelector('#products-section')
-    this.$products= document.querySelector('#products')
-    this.$moreProductsButton = document.querySelector('#more-products')
-    this.$friendReferralForm = document.querySelector('#friend-referral')
-
-  },
-
-  bindEvents() {
-    window.onload = this.Events.page_load.bind(this)
-  },
-
-  Events: {
-
-    //eventos de interação
-    //Formulário subscrição
-    //botão comprar***depois de tudo pronto***
-    //botão carregar produtos
-    //Formulário indicação de amigo
-
-    page_load() {
-
-      this.cacheSelectors()
-
-      this.getProducts(this.params.address)
-        .then(response => {
-
-          this.updateAddress(response.nextPage) 
-          return [...response.products]
-
-        })
-        .then(products => {
-
-          products.forEach(product => {
-            const card = this.getProductCard(product)
-            this.$products.innerHTML += card
-          });
-        })
-
-    },
-
-    clientSubscriptionForm_submit() {
-      e.preventDefault()
-      console.log(e)
-    },
-
-    moreProducts_click() {
-
-    },
-
-    friendReferralForm_submit(e) {
-      e.preventDefault()
-      console.log(e)
-    },
-
-  },
-
-  async getProducts(address) {
-    const response = await fetch(address)
-    return response.json()
-  },
-
-  updateAddress(newAddress) {
-    this.params.address = newAddress
-  },
-
-  getProductCard(product) {
-
-    const {
-      id,
-      image,
-      name,
-      description,
-      oldPrice,
-      price,
-      installments
-    } = product
-
-    const card = (
-
-      `<article class="product-card">
-        <img class="product-image" src="${image}" alt="product-image">
-
-        <div class="product-info">
-
-          <h4 class="product-name title-4">${name}</h4>
-          <p class="product-description product-text">${description}</p>
-
-          <div class="product-pricing">
-            <s class="old-price smaller-2">De: ${this.formatCurrency(oldPrice)}</s>
-            <strong class="current-price strong-2">Por: ${this.formatCurrency(price)}</strong>
-            <p class="installments smaller-2">ou ${installments.count}x de ${this.formatCurrency(installments.value)}</p>
-          </div>
-          
-          <button class="button" value="${id}" type="submit">Comprar</button>
-
-        </div>
-      </article>`
-
-    )
-    return card
-  },
-
-  formatCurrency(value) {
-    return value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-  },
-
-  validateForm() {
-    //recebe o formulário e valida os campos
-    //utilizável em ambos os formulários
-  },
-
-  regex: {
-    name: '',
-    cpf: '',
-    mail: '',
-  },
-
-  params: {
-    address: 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1',
-  }
-
+const init = () => {
+  bindEvents()
 }
 
-Landing_page.init()
+const clientSubscriptionForm = {
+
+  name: {
+    input: document.querySelector('#client-name'),
+    errAlert: document.querySelector('#client-name-error')
+  },
+  email: {
+    input: document.querySelector('#client-email'),
+    errAlert: document.querySelector('#client-email-error'),
+  },
+  cpf: {
+    input: document.querySelector('#client-cpf'),
+    errAlert: document.querySelector('#client-cpf-error')
+  },
+  gender: {
+    input: [...document.querySelectorAll('[name="client-gender"]')],
+    errAlert: [document.querySelector('#client-gender-error')]
+  },
+}
+
+const bindEvents = () => {
+  document.querySelector('#client-subscription').addEventListener('submit', validateClientSubscription)
+}
+
+const validateClientSubscription = (e) => {
+  e.preventDefault()
+
+  const clientSubscription = new ClientSubscription(
+    clientSubscriptionForm.name.input.value,
+    clientSubscriptionForm.email.input.value,
+    clientSubscriptionForm.cpf.input.value,
+    getRadioValue(clientSubscriptionForm.gender.input)
+  )
+
+  const validName = clientSubscription.validateName()
+  const validEmail = clientSubscription.validateEmail()
+  const validCpf = clientSubscription.validateCpf()
+  const validGender = clientSubscription.validateGender()
+
+  const valid = [validName, validEmail, validCpf, validGender]
+
+  if(valid.includes(false)){
+
+    if(!validName){
+      addErrorState(clientSubscriptionForm.name)
+    } else {
+      removeErrorState(clientSubscriptionForm.name)
+    }
+  
+    if(!validEmail){
+      addErrorState(clientSubscriptionForm.email)
+    } else {
+      removeErrorState(clientSubscriptionForm.email)
+    }
+  
+    if(!validCpf){
+      addErrorState(clientSubscriptionForm.cpf)
+    } else {
+      removeErrorState(clientSubscriptionForm.cpf)
+    }
+  
+    if(!validGender){
+      for (const key in clientSubscriptionForm.gender) {
+        addErrorState(clientSubscriptionForm.gender[key])
+      }
+    } else {
+      for (const key in clientSubscriptionForm.gender) {
+        removeErrorState(clientSubscriptionForm.gender[key])
+      }
+    }
+    
+  } else {
+    e.srcElement.submit()
+  }
+}
+
+const getRadioValue = (radioGroupElements) => {
+  for(const option of radioGroupElements){
+    if(option.checked){return option.value}
+  }
+  return ''
+}
+
+const addErrorState = (elements) => {
+  for(const key in elements) {
+    elements[key].classList.add('danger')
+  }
+}
+
+const removeErrorState = (elements) => {
+  for(const key in elements) {
+    if(elements[key].classList.contains('danger')){
+      elements[key].classList.remove('danger')
+    }
+  }
+}
+
+init()

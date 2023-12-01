@@ -138,3 +138,22 @@ body {
   line-height: var(--lh-1);
   color: var(--grey);
 }
+
+.message {
+
+  font-size: var(--fs-12);
+  font-weight: var(--fw-b);
+  line-height: var(--lh-5); 
+}
+
+.message.danger {
+  color: var(--danger);
+}
+
+.message.warning {
+  color: var(--warning);
+}
+
+.message.ok {
+  color: var(--ok);
+}

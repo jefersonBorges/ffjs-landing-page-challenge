@@ -87,10 +87,15 @@ To run this project, simply download the files and open the "index.html" file wi
   - Async
   - Event Handling
   - DOM
+  - Client-side form validation
 
 ### What I learned
 
 - CSS Grid auto-fit and image aspect-ratio [Learn how to create a responsive CSS grid layout](https://www.youtube.com/watch?v=sKFW3wek21Q)
+
+- Client-side Form validation [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+
+- [HTML Form Element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement)
 
 ### Continued development
 
