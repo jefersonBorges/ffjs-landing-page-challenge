@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Landing Page Challenge | FFJS</title>
   <link rel="stylesheet" href="./assets/style/main.css">
 
-  <script src="./assets/script/model/subscription-model.js" defer></script>
-  <script src="./assets/script/main.js" defer></script>
-
-  <title>Landing Page Challenge | FFJS</title>
-
+  <script src="./assets/script/model/form-input-model.js"></script>
+  <script src="./assets/script/model/form-model.js"></script>
+  <script src="./assets/script/model/subscription-model.js"></script>
+  <script src="./assets/script/api/product-api.js"></script>
+  <script src="./assets/script/formValidation.js" defer></script>
+  <script src="./assets/script/loadProducts.js" defer></script>
 </head>
 
 <body>
@@ -79,7 +79,7 @@
             type="text" 
             name="client-name" 
             id="client-name">
-          <span class="message" role="alert" id="client-name-error">Insira o seu nome</span>
+          <span class="message" role="alert" id="client-name-error">Insira o nome</span>
         </div>
 
         <div class="form-row">
@@ -89,7 +89,7 @@
             type="email" 
             name="client-email" 
             id="client-email">
-          <span class="message" role="alert" id="client-email-error">Insira o seu e-mail</span>
+          <span class="message" role="alert" id="client-email-error">Insira o e-mail</span>
         </div>
 
         <div class="form-row">
@@ -100,7 +100,7 @@
             inputmode="numeric" 
             name="client-cpf" 
             id="client-cpf">
-          <span class="message" role="alert" id="client-cpf-error">Insira o seu cpf com 8 números somente</span>
+          <span class="message" role="alert" id="client-cpf-error">Insira o cpf com 8 números somente</span>
         </div>
   
         <fieldset class="fieldset-radio" id="client-gender">
@@ -147,201 +147,26 @@
 
   <section class="products-section" id="products-section">
     <div class="container">
-
       <div class="cross-lined">
         <h3 class="title-3">Sua seleção especial</h3>
       </div>
-  
       <section class="product-selection" id="product-selection">
-        
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-            
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-          
-        </article>
-  
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-
-        <article class="product-card">
-          <img class="product-image" src="" alt="product-image">
-  
-          <div class="product-info">
-
-            <h4 class="product-name title-4 ">Nome do produto</h4>
-            <p class="product-description product-text">
-              Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-            </p>
-
-            <div class="product-pricing">
-              <p class="old-price smaller-2">De: R$23,99</p>
-              <strong class="current-price strong-2">Por: R$19,99</strong>
-              <p class="installments smaller-2">ou 2x de R$9,99</p>
-            </div>
-    
-            <button class="button" type="submit">Comprar</button>
-          </div>
-          
-        </article>
-        
-      </div>
-  
-      <button class="button" name="more-products" id="more-products" value="1" type="button">Ainda mais produtos aqui!</button>
-
+        <!--Products Here...-->
+      </section>
+      <button class="button" name="more-products" id="more-products" type="button">Ainda mais produtos aqui!</button>
     </div>
   </section>
 
   <section class="referral-section" id="referral-section">
     <div class="container">
-
       <div class="cross-lined">
         <h3 class="title-3">Compartilhe a novidade</h3>
       </div>
       <p class="referral-text">
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
       </p>
-  
-      <form class="friend-referral" name="friend-referral" id="friend-referral">
 
+      <form class="friend-referral" name="friend-referral" id="friend-referral">
         <div class="form-row">
           <label class="label">Nome do seu amigo:</label>
           <input
@@ -349,18 +174,16 @@
             type="text"
             name="friend-name"
             id="friend-name">
-          <span class="message" role="alert" id="friend-name-error"></span>
+          <span class="message" role="alert" id="friend-name-error">Insira o nome</span>
         </div>
-
         <div class="form-row">
           <label class="label">E-mail:</label>
           <input class="input"
           type="email"
           name="friend-email"
           id="friend-email">
-          <span class="message" role="alert" id="friend-email-error"></span>
+          <span class="message" role="alert" id="friend-email-error">Insira o e-mail</span>
         </div>
-
       </form>
       
       <button class="button" form="friend-referral" type="submit">Enviar agora</button>
@@ -369,11 +192,9 @@
 
   <footer class="footer">
     <div class="container">
-
       <p class="smaller-3">Testando suas habilidades em HTML, CSS e JS.</p>
       <p class="smaller-3">Linx Impulse</p>
       <p class="smaller-3">2019</p>
-
     </div>
   </footer>
 

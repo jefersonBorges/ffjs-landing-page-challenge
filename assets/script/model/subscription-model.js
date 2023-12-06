@@ -6,13 +6,17 @@ class Subscription {
     this.name = name;
     this.email = email;
   }
-
   validateName() {
     return regEx.name.test(this.name)
   }
-
   validateEmail() {
     return regEx.email.test(this.email)
+  }
+  validateAll() {
+    const valid = new Map()
+    return valid
+      .set('name', this.validateName())
+      .set('email', this.validateEmail())
   }
 }
 
@@ -25,15 +29,20 @@ class ClientSubscription extends Subscription {
     this.cpf = cpf;
     this.gender = gender;
   };
-
   validateCpf() {
     return regEx.cpf.test(this.cpf)
   }
-
   validateGender(){
     return regEx.gender.test(this.gender)
   }
-
+  validateAll(){
+    const valid = new Map()
+    return valid
+      .set('name', this.validateName())
+      .set('email', this.validateEmail())
+      .set('cpf', this.validateCpf())
+      .set('gender', this.validateGender())
+  }
 }
 
 const regEx = {

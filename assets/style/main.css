@@ -395,8 +395,8 @@ details[open].subscription-copy > .subscription-text{
   width: var(--w-button-card);
   padding: var(--s-6);
 }
-
-@media screen and (min-width: 52rem) { /* 832px */
+/* 504px */
+@media screen and (min-width: 31.5rem) { 
 
   .products-section .container  {
     padding: var(--s-60) 0;
@@ -434,7 +434,7 @@ details[open].subscription-copy > .subscription-text{
   gap: var(--s-30);
 }
 
-.referral-section .share-text {
+.referral-section .referral-text {
   text-align: center;
 }
 
