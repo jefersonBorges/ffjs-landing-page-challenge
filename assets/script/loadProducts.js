@@ -9,7 +9,9 @@ const loadProducts = () => {
     })
     .then(products => products.map(convertProductToCard))
     .then(productCardsArray => {
-      productPage.innerHTML += productCardsArray.join('')
+      productCardsArray.forEach( productCard => {
+        productPage.innerHTML += productCard
+      });
     })
 }
 
