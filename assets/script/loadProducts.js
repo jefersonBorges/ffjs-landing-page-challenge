@@ -14,27 +14,41 @@ const loadProducts = () => {
 }
 
 const convertProductToCard = (product) => {
-  const options = {
-    style: "currency",
-    currency: "BRL"
-  }
+  const newProduct = new Product(
+    product.image,
+    product.name,
+    product.description,
+    convertToBrlCurrency(product.oldPrice),
+    convertToBrlCurrency(product.price),
+    product.installments.count,
+    convertToBrlCurrency(product.installments.value)
+  )
+
   return (
     `<article class="product-card">
-      <img class="product-image" src="${product.image}" alt="product-image">
+      <img class="product-image" src="${newProduct.image}" alt="product-image">
       <div class="product-info">
-        <h4 class="product-name title-4">${product.name}</h4>
+        <h4 class="product-name title-4">${newProduct.name}</h4>
         <p class="product-description product-text">
-          ${product.description}
+          ${newProduct.description}
         </p>
         <div class="product-pricing">
-          <p class="old-price smaller-2">De: ${product.oldPrice.toLocaleString("pt-BR", options)}</p>
-          <strong class="current-price strong-2">Por: ${product.price.toLocaleString("pt-BR", options)}</strong>
-          <p class="installments smaller-2">ou ${product.installments.count}x de ${product.installments.value.toLocaleString("BR", options)}</p>
+          <p class="old-price smaller-2">De: ${newProduct.oldPrice}</p>
+          <strong class="current-price strong-2">Por: ${newProduct.price}</strong>
+          <p class="installments smaller-2">ou ${newProduct.installments.count}x de ${newProduct.installments.value}</p>
         </div>
         <button class="button" type="button">Comprar</button>
       </div>
     </article>`
   )
+}
+
+const convertToBrlCurrency = (value) => {
+  const options = {
+    style: "currency",
+    currency: "BRL"
+  }
+  return value.toLocaleString("pt-BR", options)
 }
 
 loadProducts()
