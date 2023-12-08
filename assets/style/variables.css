@@ -1,12 +1,10 @@
 :root {
 
   /* COLORS */
-
   --dark-grey: #707070;
   --grey: #888888;
   --shadow-color: #00000029;
   --white: #ffffff;
-
   --danger: red;
 
   /* TYPOGRAPHY */
@@ -29,18 +27,15 @@
   --fw-b: 700;
 
   /* line-height */
-
   --lh-1: 1em;
   --lh-2: 1.2em;
   --lh-3: 1.3em;
   --lh-4: 1.4em;
   --lh-5: 1.5em;
 
-
   /* BOX-MODEL */
 
   /* sizing: width, height */
-
   --w-page-max: 93.75rem;               /* 1500px */
   --w-page-min: 26.25rem;               /* 420px */
   --w-container-max: 57.5rem;           /* 920px */
@@ -64,13 +59,11 @@
   --h-footer: 18.75rem;                 /* 300px */
 
   /* skew */
-
   --skew-header-angle-mobile: 15deg;
   --skew-header-angle-desktop: 5deg;
   --skew-footer-angle: -5deg;
 
   /* spacing: gap, margin, padding*/
-
   --s-0: 1rem;                     /* 16px */
   --s-6: calc(var(--s-0)*.375);    /* 6px */
   --s-10: calc(var(--s-0)*.625);   /* 10px */
@@ -86,7 +79,7 @@
   --s-70: calc(var(--s-0)*4.375);  /* 70px */
   --s-80: calc(var(--s-0)*5);      /* 80px */
 
-  --radius: 0.25rem;       /* 4px */
+  --radius: 0.25rem;                              /* 4px */
   --border: 0.0625rem solid var(--dark-grey);     /* 1px */
   --border-danger: 0.0625rem solid var(--danger);
   --border-warning: 0.0625rem solid var(--warning);

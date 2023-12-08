@@ -3,7 +3,6 @@ body {
 }
 
 .title-1 {
-
   font-size: var(--fs-20);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -11,7 +10,6 @@ body {
 }
 
 .title-2 {
-
   font-size: var(--fs-20);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -19,7 +17,6 @@ body {
 }
 
 .title-3 {
-
   font-size: var(--fs-18);
   font-weight: var(--fw-b);
   line-height: var(--lh-0);
@@ -27,7 +24,6 @@ body {
 }
 
 .title-4 {
-
   font-size: var(--fs-14);
   font-weight: var(--fw-m);
   line-height: var(--lh-2);
@@ -35,7 +31,6 @@ body {
 }
 
 .strong-1 {
-
   font-size: var(--fs-40);
   font-weight: var(--fw-b);
   line-height: var(--lh-2);
@@ -43,7 +38,6 @@ body {
 }
 
 .strong-2 {
-
   font-size: var(--fs-16);
   font-weight: var(--fw-b);
   line-height: var(--lh-0);
@@ -51,7 +45,6 @@ body {
 }
 
 .smaller-1 {
-
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -59,7 +52,6 @@ body {
 }
 
 .smaller-2 {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -67,7 +59,6 @@ body {
 }
 
 .smaller-3 {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -75,7 +66,6 @@ body {
 }
 
 .item-link {
-
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -83,7 +73,6 @@ body {
 }
 
 .header-text {
-
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -91,7 +80,6 @@ body {
 }
 
 .subscription-text {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-5);
@@ -99,7 +87,6 @@ body {
 }
 
 .referral-text {
-
   font-size: var(--fs-14);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -107,7 +94,6 @@ body {
 }
 
 .product-text {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-3);
@@ -115,7 +101,6 @@ body {
 }
 
 .label {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-n);
   line-height: var(--lh-2);
@@ -124,7 +109,6 @@ body {
 
 .input,
 .radio {
-
   font-size: var(--fs-18);
   font-weight: var(--fw-n);
   line-height: var(--lh-1);
@@ -132,7 +116,6 @@ body {
 }
 
 .button {
-
   font-size: var(--fs-16);
   font-weight: var(--fw-n);
   line-height: var(--lh-1);
@@ -140,7 +123,6 @@ body {
 }
 
 .message {
-
   font-size: var(--fs-12);
   font-weight: var(--fw-b);
   line-height: var(--lh-5); 
@@ -148,12 +130,4 @@ body {
 
 .message.danger {
   color: var(--danger);
-}
-
-.message.warning {
-  color: var(--warning);
-}
-
-.message.ok {
-  color: var(--ok);
 }
