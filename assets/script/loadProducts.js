@@ -17,7 +17,7 @@ const loadProducts = () => {
 
 const convertProductToCard = (product) => {
   const newProduct = new Product(
-    product.image,
+    `http:${product.image}`,
     product.name,
     product.description,
     convertToBrlCurrency(product.oldPrice),
@@ -30,7 +30,7 @@ const convertProductToCard = (product) => {
     `<article class="product-card">
       <img class="product-image" src="${newProduct.image}" alt="product-image">
       <div class="product-info">
-        <h4 class="product-name title-4">${newProduct.name}</h4>
+        <h3 class="product-name title-4">${newProduct.name}</h3>
         <p class="product-description product-text">
           ${newProduct.description}
         </p>
