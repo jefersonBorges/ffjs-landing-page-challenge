@@ -18,7 +18,7 @@ const validateClientSubscription = (e) => {
     clientSubscriptionForm.getGenderValue(),
   )
   const valid = clientSubscription.validateAll()
-  
+  console.log(valid)
   if(mapContainsFalse(valid)){
     manageValidStates(clientSubscriptionForm, valid)
   } else {
@@ -40,7 +40,7 @@ const  validateFriendSubscription = (e) => {
     friendSubscriptionForm.getEmailValue(),
   )
   const valid = friendSubscription.validateAll()
-  
+
   if(mapContainsFalse(valid)){
     manageValidStates(friendSubscriptionForm, valid)
   } else {

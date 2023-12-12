@@ -48,6 +48,6 @@ class ClientSubscription extends Subscription {
 const regEx = {
   name : /[a-zA-Z]{3,}/,
   email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-  cpf: /\d{8}/,
+  cpf: /^\d{8}$/,
   gender : /[a-zA-Z]{3,}/,
 }
