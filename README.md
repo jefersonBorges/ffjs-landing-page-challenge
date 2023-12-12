@@ -1,4 +1,4 @@
-# Formação Full Stack Javascript - Landing Page Challenge
+# Landing Page Challenge - Formação Full Stack Javascript
 
 This is a solution for the landing page challenge on the Formação Full Stack Javascript course. It displays a landing page with a newsletter form and a product section.
 
@@ -55,22 +55,22 @@ The implemented design must be according to the following mock:
 
 #### Mobile
 
-![Mobile Screenshot](./screenshot/)
+![Mobile Screenshot](./screenshot/mobile-screenshot.gif)
 
 #### Desktop
 
-![Desktop Screenshot](./screenshot/)
-![Desktop Screenshot active states](./screenshot/)
+![Desktop Screenshot](./screenshot/desktop-screenshot.gif)
+![Desktop Screenshot active page sections](./screenshot/desktop-screenshot-sections.gif)
 ![Desktop Screenshot error](./screenshot/)
 
 ### Links
 
-- Solution URL: [Github repository](link)
-- Live Site URL: [Github live page](link)
+- Solution URL: [Github repository](https://github.com/jefersonBorges/ffjs-landing-page-challenge)
+- Live Site URL: [Github live page](https://jefersonborges.github.io/ffjs-landing-page-challenge/)
 
 ## Setup
 
-To run this project, simply download the files and open the "index.html" file with your internet browser, or click on the [live site url](link).
+To run this project, simply download the files and open the "index.html" file with your internet browser, or click on the [live site url](https://jefersonborges.github.io/ffjs-landing-page-challenge/).
 
 ## My process
 
