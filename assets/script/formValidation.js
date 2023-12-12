@@ -1,5 +1,6 @@
 const validateClientSubscription = (e) => {
-  e.preventDefault()
+  const event = e
+  event.preventDefault()
 
   const clientSubscriptionForm = new ClientSubscriptionForm(
     document.querySelector('#client-name'),
@@ -18,16 +19,14 @@ const validateClientSubscription = (e) => {
     clientSubscriptionForm.getGenderValue(),
   )
   const valid = clientSubscription.validateAll()
-  console.log(valid)
-  if(mapContainsFalse(valid)){
-    manageValidStates(clientSubscriptionForm, valid)
-  } else {
-    e.srcElement.submit()
-  }
+
+  manageValidStates(clientSubscriptionForm, valid)
+  if(!mapContainsFalse(valid)){event.srcElement.submit()}
 }
 
 const  validateFriendSubscription = (e) => {
-  e.preventDefault()
+  const event = e
+  event.preventDefault()
 
   const friendSubscriptionForm = new SubscriptionForm(
     document.querySelector('#friend-name'),
@@ -41,11 +40,8 @@ const  validateFriendSubscription = (e) => {
   )
   const valid = friendSubscription.validateAll()
 
-  if(mapContainsFalse(valid)){
-    manageValidStates(friendSubscriptionForm, valid)
-  } else {
-    e.srcElement.submit()
-  }
+  manageValidStates(friendSubscriptionForm, valid)
+  if(!mapContainsFalse(valid)) {event.srcElement.submit()}
 }
 
 const manageValidStates = (subscriptionForm, validationMap) => {

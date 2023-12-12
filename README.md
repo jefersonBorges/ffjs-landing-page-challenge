@@ -61,7 +61,7 @@ The implemented design must be according to the following mock:
 
 ![Desktop Screenshot](./screenshot/desktop-screenshot.gif)
 ![Desktop Screenshot active page sections](./screenshot/desktop-screenshot-sections.gif)
-![Desktop Screenshot error](./screenshot/)
+![Desktop Screenshot validation](./screenshot/desktop-screenshot-validation.gif)
 
 ### Links
 
